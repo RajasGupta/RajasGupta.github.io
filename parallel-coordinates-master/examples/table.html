@@ -1,5 +1,5 @@
 <!doctype html>
-<title>Linking to Data Table</title>
+<title>EPS Cushioning Curve</title>
 <link rel="stylesheet" type="text/css" href="../d3.parcoords.css">
 <link rel="stylesheet" type="text/css" href="style.css">
 <style>
@@ -16,10 +16,6 @@
 <script src="lib/divgrid.js"></script>
 <div id="example" class="parcoords" style="height:200px;"></div>
 <div id="grid"></div>
-<p>An extension of the <a href="brushing.html">bushing example</a> which links the chart to a data table. When hovering over the table, that row of data is highlighted in the chart. When brushing, the data in the table is updated.</p>
-<p>The table is <a href="http://bl.ocks.org/3687826">divgrid</a>, a simple <a href="http://bost.ocks.org/mike/chart/">reusable chart</a> that follows <a href="http://bl.ocks.org/3808218">general update pattern I</a>.</p>
-<p>Divgrid isn't fast when updating with hundreds or thousands of rows, so <strong>only the first 10 rows of the data are shown</strong>. For better performance, use a more sophisticated data grid like <a href="https://github.com/mleibman/SlickGrid">SlickGrid</a>.</p>
-<p>There is an <a href="http://exposedata.com/parallel/">old example</a> of SlickGrid with parallel coordinates. In that version the SVG is a bottleneck. An example of SlickGrid with this library should appear in the next few weeks (Nov-Dec, 2012).</p>
 <script id="brushing">// quantitative color scale
 var blue_to_brown = d3.scale.linear()
   .domain([9, 50])
