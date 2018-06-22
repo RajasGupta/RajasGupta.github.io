@@ -1,4 +1,4 @@
-Area,Density,Thickness,Weight,Fragility
+Area(in^2),Density(pcf),Thickness(in),Weight(lbf),Fragility(G)
 50,1.25,0.75,100,49.50554368
 50,1.25,0.75,114.4444444,33.96342652
 50,1.25,0.75,128.8888889,36.33730457
