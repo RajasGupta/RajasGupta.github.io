@@ -35,7 +35,13 @@ var blue_to_brown = d3.scale.linear()
 var color = function(d) { return blue_to_brown(d['economy (mpg)']); };
 
 var parcoords = d3.parcoords()("#example")
-    .color("rgb(0,200,0)")
+parcoords.color(function(d) {
+// d corresponds to the individual data object
+if (d.x < 100)
+    return "red";
+else
+    return "green";
+});
     .alpha(0.4);
 
 // load csv file and create the chart
