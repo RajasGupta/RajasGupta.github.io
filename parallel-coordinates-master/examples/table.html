@@ -22,10 +22,8 @@ var blue_to_brown = d3.scale.linear()
   .range(["steelblue", "brown"])
   .interpolate(d3.interpolateLab);
 
-var color = function(d) { return blue_to_brown(d['Area(in^2)']); };
-
 var parcoords = d3.parcoords()("#example")
-  .color(color)
+  .color(rgb(0, 200, 200))
   .alpha(0.4);
 
 // load csv file and create the chart
